@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr7Dev</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f4f4f4;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr7Dev</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to CenT/Pro/DeV</h2>
+        <p>Your go-to platform for web solutions.</p>
+    </section>
+    <section class="grid">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>We build modern and responsive websites.</p>
+        </div>
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Creating stunning user experiences.</p>
+        </div>
+        <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Helping you rank better on search engines.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 CenT/Pro/DeV. All rights reserved.</p>
+    </footer>
+</body>
+</html>
