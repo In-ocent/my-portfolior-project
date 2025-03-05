@@ -1,5 +1,26 @@
-#position-fix{
+html { scroll-behavior: smooth; 
+}
 
+body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: orange;
+    cursor: pointer;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  
+    border-radius: 50px;
+  }
+  
+  *::selection{
+    background-color: #fff;
+    color: orange;
+    
+}
+
+#position-fix{
     position: fixed;
     top: 0;
     left: 0;
@@ -151,8 +172,13 @@ body {
     border: none;
     outline: none;
     display: block;
+   
 }
 
+button a{
+    text-decoration: none;
+    color: #fff;
+}
 .button:active{
  position: relative;
  left: -2px;
@@ -185,4 +211,10 @@ a{
     text-decoration: none;
 }
 
+#erro{
+    color: #ff4c27;
+}
 
+.good{
+    color: rgb(47, 255, 0);
+}
